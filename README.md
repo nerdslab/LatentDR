@@ -16,8 +16,26 @@ To address this challenge, we propose a novel approach for distribution-aware la
 Our approach first **degrades** the samples stochastically in the latent space, mapping them to augmented labels, and then **restores** the samples from their corrupted versions during training. 
 This process confuses the classifier
 in the degradation step and restores the overall class distribution of the original samples, promoting diverse intraclass/cross-domain variability.
+
 We extensively evaluate our
 approach on a diverse set of datasets and tasks, including domain generalization benchmarks and medical imaging datasets with strong domain shift, where we show
 our approach achieves significant improvements over existing methods for latent space augmentation.
 
 
+## Major results
+
+1. Domain generalization
+2. Medical image classification
+3. Long-tail recognition
+
+
+## Citing LatentDR
+
+```BibTeX
+@article{liu2023latentdr,
+  title={LatentDR: Improving Model Generalization Through Sample-Aware Latent Degradation and Restoration},
+  author={Liu, Ran and Khose, Sahil and Xiao, Jingyun and Sathidevi, Lakshmi and Ramnath, Keerthan and Kira, Zsolt and Dyer, Eva L},
+  journal={arXiv preprint arXiv:2308.14596},
+  year={2023}
+}
+```
