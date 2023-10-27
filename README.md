@@ -10,7 +10,7 @@ Despite significant advances in deep learning, models often struggle to generali
 To address this challenge, we propose a novel approach for distribution-aware latent augmentation that leverages the relationships across samples to guide the augmentation procedure.
 
 <div align="center">
-  <img src="LatentDR.png" width="100%" height="100%"/>
+  <img src="LatentDR_method.png" width="100%" height="100%"/>
 </div><br/>
 
 Our approach first **degrades** the samples stochastically in the latent space, mapping them to augmented labels, and then **restores** the samples from their corrupted versions during training. 
