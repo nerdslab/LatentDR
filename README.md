@@ -5,8 +5,14 @@ PyTorch implementation of [LatentDR: Improving Model Generalization Through Samp
 
 ## Introduction
 
-Despite significant advances in deep learning, models often struggle to generalize well to new, unseen domains, especially when training data is limited. To address this challenge, we propose a novel approach for
-distribution-aware latent augmentation that leverages the relationships across samples to guide the augmentation procedure. 
+Despite significant advances in deep learning, models often struggle to generalize well to new, unseen domains, especially when training data is limited. 
+
+To address this challenge, we propose a novel approach for distribution-aware latent augmentation that leverages the relationships across samples to guide the augmentation procedure.
+
+<div align="center">
+  <img src="LatentDR.png" width="100%" height="100%"/>
+</div><br/>
+
 Our approach first **degrades** the samples stochastically in the latent space, mapping them to augmented labels, and then **restores** the samples from their corrupted versions during training. 
 This process confuses the classifier
 in the degradation step and restores the overall class distribution of the original samples, promoting diverse intraclass/cross-domain variability.
